@@ -1,0 +1,320 @@
+paleta de cores {
+  color: #293241;
+  color: #bfd7e4;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Staatliches', cursive;
+  color: #e5e5e5;
+  background-color: #bfd7e4;
+}
+.page {
+  width: 736px;
+  margin: auto;
+}
+
+body::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 465px;
+  left: 0px;
+  top: 0px;
+  background: #293241;
+  z-index: -1;
+}
+
+header h1 {
+  display: flex;
+  width: 282px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #ffffff;
+
+  margin: 110px auto 0;
+}
+
+header p {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 400px;
+  height: 46px;
+  color: #ffffff;
+
+  margin: auto;
+}
+
+header img {
+  display: flex;
+  width: 225px;
+  height: 100px;
+  margin: 2px auto 32px;
+}
+
+.info {
+  width: 750px;
+  height: 130px;
+  background-color: #f67669;
+  margin: auto;
+  border-radius: 20px 20px 0 0;
+  padding: 50px 275px;
+}
+
+header h2 {
+  display: ;
+  width: 200px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: auto;
+  color: white;
+}
+
+form {
+  display: flex;
+  width: 750px;
+  padding: 32px 64px;
+  margin: 0px auto 0;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+
+.input-wrapper input {
+  width: 300px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  margin-top: 8px;
+  background-color: #fafafc;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div:nth-child(1) {
+  width: 300px;
+}
+
+.col-2 > div:nth-child(2) {
+  width: 300px;
+}
+
+fieldset label.mail {
+  margin-top: 16px;
+}
+
+fieldset input.mail {
+  width: 100%;
+}
+
+.fieldset-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  margin-top: 32px;
+}
+
+.fieldset-wrapper legend {
+  display: flex;
+  font-family: 'Staatliches', cursive;
+  width: 213px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #253b51;
+  margin: 0 auto 8px;
+}
+
+.input-wrapper select {
+  padding: 10px;
+  width: 300px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+  margin-top: 8px;
+  background-color: #fafafc;
+}
+
+.tutor {
+  margin-top: 32px;
+}
+
+.input-wrapper textarea {
+  width: 608px;
+  height: 167px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  margin-top: 8px;
+  background-color: #fafafc;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin-top: 30px;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  margin: 0;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+
+.checkbox-wrapper input {
+  /*Organizou e deixou oculto a caixa checkbox, ativando assim a acessibilidade perdida na nova estilização*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  display: block;
+  content: '';
+  height: 24px;
+  width: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  /*Usado para incluir o "V" no checked do checkbox */
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  /* Serve para adicionar a borda quando usar o shift e espaço (outline)*/
+  outline: 1px solid black;
+}
+
+fieldset legend.schedule {
+  margin: 36px auto 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  width: 258px;
+  height: 34px;
+  color: #253b51;
+}
+
+.col-3 {
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  margin-top: 32px;
+
+  justify-content: center;
+}
+
+.input-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-time label {
+  font-family: 'Poppins', sans-serif;
+  width: 35px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-top: 0;
+}
+
+.input-time input.one {
+  width: 140px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 64px;
+  background-color: #fafafc;
+}
+.input-time input.two {
+  width: 300px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 64px;
+  background-color: #fafafc;
+}
+
+footer {
+  flex-direction: column;
+  padding: 52px 71px 52px 71px;
+  display: flex;
+  margin-left: 307px;
+  width: 750px;
+  height: 140px;
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: -32px;
+  background-color: white;
+}
+
+footer button {
+  font-family: 'Staatliches', cursive;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+  background: #f67669;
+  width: 622px;
+  height: 111px;
+  border-radius: 8px;
+}
+
+footer button:hover {
+  background-color: #aa4c42;
+}
